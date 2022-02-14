@@ -20,6 +20,7 @@ All the characters in a string, with one or more cut off the begining.<br>
 The values in the prefix table are the length of longest prefix that matches a proper suffix in the same subpattern<br>
 eg: subpattern = "aba", the value in table = 1 {only one char can be considered to have prefix == suffix} <br>
 eg: subpattern = "abcab", table value = 2 <br>
+
 ![img1](https://user-images.githubusercontent.com/71068960/153889929-dd5c6489-e28f-4b26-be60-da2f8fd51125.gif)
 
 
