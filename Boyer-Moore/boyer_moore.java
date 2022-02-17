@@ -32,9 +32,9 @@ public class boyer_moore {
 
 	public static void main(String [] args) {
 		String text = "ABCABABCABAC";
-	    String pattern = "CAB";
-	    HashMap <Character, Integer> mistmatchTable = new HashMap <> ();
-	    precomputeShifts(pattern, mistmatchTable);
-    	System.out.println("pattern found at: " + doBoyerMoore(text, pattern, mistmatchTable));
+	    	String pattern = "CAB";
+	    	HashMap <Character, Integer> mistmatchTable = new HashMap <> ();
+	    	precomputeShifts(pattern, mistmatchTable);
+    		System.out.println("pattern found at: " + doBoyerMoore(text, pattern, mistmatchTable));
 	}
 }
