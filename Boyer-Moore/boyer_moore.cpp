@@ -28,14 +28,15 @@ int boyer_moore(string txt, string patt, map <char, int> & mismatchTable) {
 		}
 		if(skips == 0) return i;
 	}
+	return -1;
 }
 
 int main() {
-	string text = "ABCABABCABAC";
+    string text = "ABCABABCABAC";
     string pattern = "CAB";
     // string pattern = "BAB";
- 	map <char, int> mismatchTable;
-    precomputeShifts(text, mismatchTable);
+    map <char, int> mismatchTable;
+    precomputeShifts(pattern, mismatchTable);
     cout << "pattern found at: " << boyer_moore(text, pattern, mismatchTable);
 	return 0;
 }
